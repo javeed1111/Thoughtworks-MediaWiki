@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+    environment {
+        AWS_CREDENTIALS = credentials('AWSAccess')
+    }
+
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/javeed1111/Thoughtworks.git'
+            }
+        }
+        
+        stage('Terraform Init with AWS Credentials') {
+            steps {
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: 'AWSAccess',
+                    accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+                    secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
+                ]]) {
+                    sh 'terraform init'
+                }
+            }
+        }
+        
+        stage('Terraform Plan') {
+            steps {
+                sh 'terraform plan -out=tfplan'
+            }
+        }
+        
+        stage('Terraform Apply') {
+            steps {
+                sh 'terraform apply -auto-approve tfplan'
+            }
+        }
+        
+        // stage('Deploy MediaWiki') {
+        //     steps {
+        //         sh 'kubectl apply -f deployment.yaml'
+        //         sh 'kubectl apply -f service.yaml'
+        //     }
+        // }
+
+        // stage('Deploy MediaWiki with Helm') {
+        //     steps {
+        //         sh 'helm upgrade --install mediawiki ./path/to/mediawiki-chart'
+        //     }
+        // }
+    }
+}
