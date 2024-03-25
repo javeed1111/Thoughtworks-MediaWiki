@@ -3,16 +3,19 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: my-app
+    app: my-app  # Ensure this matches the labels in the template metadata
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app  # Ensure this matches the labels in the template metadata
   template:
     metadata:
       labels:
-        app: my-app
+        app: my-app  # Ensure this matches the labels in the deployment selector
     spec:
       containers:
-        - name: con1
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        - name: my-container
+          image: my-image:latest
           ports:
             - containerPort: 9090
