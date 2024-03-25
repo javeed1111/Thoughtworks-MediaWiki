@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "mediawiki" . }}
+  name: my-deployment
   labels:
-    app: {{ include "mediawiki" . }}
+    app: my-app
 spec:
   replicas: {{ .Values.replicaCount }}
   template:
     metadata:
       labels:
-        app: {{ include "mediawiki" . }}
+        app: my-app
     spec:
       containers:
         - name: con1
