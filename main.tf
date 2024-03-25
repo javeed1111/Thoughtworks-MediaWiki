@@ -1,3 +1,14 @@
+provider "aws" {
+  region = "us-east-1"  # Replace with your desired AWS region
+}
+
+terraform {
+  required_version = ">= 0.12"
+  required_providers {
+    aws = "~> 3.0"  
+  }
+}
+
 module "eks_cluster" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "eks_cluster_for_MediaWiki"
