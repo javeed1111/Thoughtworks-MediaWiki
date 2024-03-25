@@ -5,12 +5,17 @@ provider "aws" {
 terraform {
   required_version = ">= 0.12"
   required_providers {
-    aws = "~> 3.0"  
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"  
+    }
   }
 }
 
 module "eks_cluster" {
   source = "terraform-aws-modules/eks/aws"
+  version = "17.16.0"  # Specify the version of the EKS module
+
   cluster_name = "eks_cluster_for_MediaWiki"
   cluster_version = "1.21"
   subnets = ["subnet-0249a2c08da5e58cb", "subnet-00b22146f5849348c"]  
