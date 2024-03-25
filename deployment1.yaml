@@ -16,4 +16,4 @@ spec:
         - name: mediawiki
           image: your-docker-username/mediawiki:latest
           ports:
-            - containerPort: 80
+            - containerPort: 9090

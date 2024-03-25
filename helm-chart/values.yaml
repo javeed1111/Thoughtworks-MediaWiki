@@ -1,0 +1,4 @@
+replicaCount: 3
+image:
+  repository: javeed1111/mediawiki
+  tag: latest
