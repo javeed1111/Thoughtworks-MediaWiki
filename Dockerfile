@@ -30,11 +30,12 @@ RUN wget https://releases.wikimedia.org/mediawiki/1.35/mediawiki-1.35.5.tar.gz &
 RUN chown -R www-data:www-data /var/www/html && \
     a2enmod rewrite
 
-# Expose ports 80 (HTTP) and 3306 (MySQL)
+# Expose port 80 (HTTP) and 3306 (MySQL)
 EXPOSE 80 3306
 
 # Start Apache server and MySQL
 CMD service mysql start && apache2-foreground
+
 
 
 
