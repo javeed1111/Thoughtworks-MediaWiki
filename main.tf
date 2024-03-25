@@ -12,7 +12,7 @@ terraform {
 module "eks_cluster" {
   source = "terraform-aws-modules/eks/aws"
   cluster_name = "eks_cluster_for_MediaWiki"
-  cluster_version = "1.20"  # Specify a supported Kubernetes version
+  cluster_version = "1.29" 
   subnets = ["subnet-0249a2c08da5e58cb", "subnet-00b22146f5849348c"]  
   vpc_id = "vpc-0b73766d2f01cb46b" 
   node_groups = {
