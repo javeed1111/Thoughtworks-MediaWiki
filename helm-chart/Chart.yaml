@@ -1,5 +1,7 @@
-apiVersion: v2
-name: mediawiki
-version: 0.1.0
-description: A Helm chart for deploying your application
-maintainer: javeed mdjaveed16896@gmail.com
+replicaCount: 3
+image:
+  repository: javeed1111/mediawiki
+  tag: latest
+service:
+  type: LoadBalancer
+  port: 80  # Adjust this port according to your application requirements
