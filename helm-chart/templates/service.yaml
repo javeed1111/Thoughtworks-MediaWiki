@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "mediawiki" . }}
+  name: my-service
   labels:
-    {{- include "mediawiki" . | nindent 4 }}
+    app: my-app
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,5 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: {{ include "your-helm-chart.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    app: my-app
