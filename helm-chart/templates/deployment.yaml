@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: my-app  # Ensure this matches the labels in the template metadata
+    app: my-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app  # Ensure this matches the labels in the template metadata
+      app: my-app
   template:
     metadata:
       labels:
-        app: my-app  # Ensure this matches the labels in the deployment selector
+        app: my-app
     spec:
       containers:
         - name: my-container
-          image: my-image:latest
+          image: javeed1111/mediawiki:latest  
           ports:
             - containerPort: 9090
