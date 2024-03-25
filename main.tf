@@ -1,12 +1,12 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 terraform {
   required_version = ">= 0.12"
   required_providers {
-    aws = ">= 3.0, < 4.0"  # Adjust the version constraint to be more compatible
+    aws = ">= 3.0, < 4.0"  # Adjusted version constraint
   }
-}
-
-provider "aws" {
-  region = "us-east-1"
 }
 
 module "eks_cluster" {
