@@ -74,9 +74,10 @@ Thoughtworks-MediaWiki/
 
 The application can be accessed using the following URLs:
 
+- **Direct IP Access**: [http://3.82.188.49/mw-config/index.php](http://3.82.188.49/mw-config/index.php)
+
 - **Load Balancer URL**: [a1be91954f25b4398a0e481bd2d24bc2-402578010.us-east-1.elb.amazonaws.com](http://a1be91954f25b4398a0e481bd2d24bc2-402578010.us-east-1.elb.amazonaws.com)
 
-- **Direct IP Access**: [http://3.82.188.49/mw-config/index.php](http://3.82.188.49/mw-config/index.php)
 
 Please note that access to the application will be available until the end of the day.
 
