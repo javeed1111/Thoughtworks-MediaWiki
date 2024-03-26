@@ -26,7 +26,6 @@ module "eks_cluster" {
     }
   }
 
-  # Add this block to configure the Kubernetes authentication
   map_roles = [
     {
       "rolearn"       = "arn:aws:iam::111078077848:role/eks_cluster_for_MediaWiki20240325081953889000000002"
