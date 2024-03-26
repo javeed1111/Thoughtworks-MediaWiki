@@ -52,19 +52,21 @@ Thoughtworks-MediaWiki/
 - For any issues or inquiries, contact javeed mdjaveed16896@gmail.com.
 
 ## Project Logo
+
 ![Project Logo](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/app1.png)
 
 ## Deployment Architecture
+
 ![Deployment Architecture](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/jnk1.png)
 
+## Docker image
 
 ![Docker image ](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/do1.png)
 
-![Kubernetes deployments ]([[[https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p1.png](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png)](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png)
+## Deployment on EKS
 
+![Image 1](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p1.png)
 
+![Image 2](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png)
 
-https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png
-https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png
-
-
+![Image 3](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png)
