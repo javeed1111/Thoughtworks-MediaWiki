@@ -1,6 +1,6 @@
 replicaCount: 3
 image:
-  repository: javeed1111/mediawiki
+  repository: mediawiki
   tag: latest
 service:
   type: LoadBalancer
