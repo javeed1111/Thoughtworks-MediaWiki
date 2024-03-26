@@ -1,8 +1,6 @@
 
 # Thoughtworks MediaWiki Deployment
 
-# Thoughtworks MediaWiki
-
 ## Description
 This project aims to deploy a MediaWiki application using Kubernetes on AWS EKS. It utilizes Terraform for Infrastructure as Code (IaC) to provision the Kubernetes cluster on AWS, Helm for managing Kubernetes applications, and Jenkins for Continuous Integration/Continuous Deployment (CI/CD) pipeline automation.
 
@@ -70,3 +68,15 @@ Thoughtworks-MediaWiki/
 ![Image 2](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png)
 
 ![Image 3](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png)
+
+
+## Accessing the Application
+
+The application can be accessed using the following URLs:
+
+- **Load Balancer URL**: [a1be91954f25b4398a0e481bd2d24bc2-402578010.us-east-1.elb.amazonaws.com](http://a1be91954f25b4398a0e481bd2d24bc2-402578010.us-east-1.elb.amazonaws.com)
+
+- **Direct IP Access**: [http://3.82.188.49/mw-config/index.php](http://3.82.188.49/mw-config/index.php)
+
+Please note that access to the application will be available until the end of the day.
+
