@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: mediawiki
+          image: javeed1111/mediawiki
           ports:
             - containerPort: 9090
