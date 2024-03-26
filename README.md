@@ -58,3 +58,13 @@ Thoughtworks-MediaWiki/
 ![Deployment Architecture](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/jnk1.png)
 
 
+![Docker image ](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/do1.png)
+
+![Kubernetes deployments ]([[[https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p1.png](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png)](https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png)
+
+
+
+https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p2.png
+https://github.com/javeed1111/Thoughtworks-MediaWiki/blob/main/task/p3.png
+
+
