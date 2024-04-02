@@ -8,3 +8,35 @@ service:
 
 
 #docker pull javeed1111/mediawiki:latest
+
+# mediawiki-chart/values.yaml
+
+# # Number of replicas for the MediaWiki deployment
+# replicaCount: 3
+
+# # Docker image repository and tag for MediaWiki
+# image:
+#   repository: myregistry/mediawiki
+#   tag: latest
+
+# # Database connection details
+# database:
+#   host: mysql
+#   port: 3306
+#   user: mediawiki
+#   password: mediawiki123
+#   database: mediawiki
+
+# # Service configuration
+# service:
+#   name: mediawiki
+#   port: 80
+#   type: ClusterIP
+
+# # Ingress configuration (Optional)
+# ingress:
+#   enabled: true
+#   hostname: mediawiki.example.com
+
+# # Add other configurable values here
+
