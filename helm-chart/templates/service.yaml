@@ -13,3 +13,24 @@ spec:
       name: http
   selector:
     app: my-app
+
+
+# # mediawiki-chart/templates/ingress.yaml
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: {{ include "mediawiki-chart.fullname" . }}
+#   labels:
+#     {{- include "mediawiki-chart.labels" . | nindent 4 }}
+# spec:
+#   rules:
+#     - host: mediawiki.example.com
+#       http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: {{ include "mediawiki-chart.fullname" . }}
+#                 port:
+#                   number: 80
